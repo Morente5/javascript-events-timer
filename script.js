@@ -1,4 +1,4 @@
-function showClock(ms) {
+function showTimer(ms) {
 	var date2 = new Date();
 	var ms2 = date2.getTime();
 	var date = new Date(ms2 - ms + date2.getTimezoneOffset()*60000);
@@ -19,6 +19,6 @@ window.onload = function() {
 	var ms = date.getTime();
 
 	setInterval(function() {
-		showClock(ms);
+		showTimer(ms);
 	}, 1000);
 };
